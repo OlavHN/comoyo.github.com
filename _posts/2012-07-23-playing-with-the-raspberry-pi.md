@@ -7,7 +7,7 @@ category: Technology
 At work this friday, we finally got our hands on the [Raspberry Pi](http://www.raspberrypi.org/). I got to spend some hours with the device, and these are my thoughts. 
 
 #First impression#
-The Pi is small. Very small actually. The fact that this thing can do 1080p video, run Debian and Arch Linux, and many other cool tricks, for little over 200 NOK, baffles my mind. Not only 4 years ago I built my HTPC for 5000 NOK in a box the size of a stereo receiver, and this thing can handle hi def media a lot better, in a package much, much smaller. 
+The Pi is small. Very small actually. The fact that this thing can do 1080p video, run Debian and Arch Linux, and many other cool tricks, for little over 200 NOK, baffles my mind. Only 4 years ago I built my HTPC for 5000 NOK in a box the size of a stereo receiver, and this thing can handle hi def media a lot better, in a package much, much smaller. 
 
 ![Raspberry Pi](/assets/img/posts/raspberry/raspberry.jpg)
 
