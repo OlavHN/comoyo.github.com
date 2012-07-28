@@ -2,14 +2,16 @@
 layout: post
 title: Backbone.js on WebSockets
 author: myrlund
-categories: HTML5, JavaScript
+categories: HTML5
 ---
 
-When we arrived at Comoyo for our summer internship, we were given a pretty exciting task: build a messaging web app, using any technologies at hand, but _without using a backend_. Well, not completely true – we already had a UNIX-socket backend running a slightly unusual JSON-based protocol that we were to hook into, so the problem soon became building a self-contained HTML app able to talk to it without any backend of its own.
+When we arrived at Comoyo for our summer internship, we were given a pretty exciting task: build a messaging web app, using any technologies at hand, but _without using a backend_. Well, not completely true – we already had a UNIX-socket backend that we were to hook into, so the problem soon became building a self-contained HTML app able to talk to it _without any backend of its own_.
 
 The natural platform choice became WebSocket-heavy HTML5.
 
-After [implementing a WebSocket handler in our Netty backend](...) we started thinking about our client-side technology stack. Apart from using WebSockets for server communication, we decided to use localStorage for client-side storage and cache, and Backbone.js for the actual front-end. We decided to go for CoffeeScript instead of pure JavaScript, to speed up development a bit.
+After [implementing a WebSocket handler in our Netty backend](...) we started thinking about our client-side technology stack. Apart from using WebSockets for server communication, we decided to use localStorage for client-side storage and cache, and Backbone.js for the actual front-end. To speed up development, we decided to go for CoffeeScript instead of pure JavaScript.
+
+_**Heads up!** This article focuses on integrating Backbone with an asynchronous web socket protocol, and assumes some level of comprehension of how Backbone works. Please check out [the Backbone documentation](http://backbonejs.org/) and [its examples](http://backbonejs.org/#examples) for a quick introduction before checking back._
 
 # Event-driven web sockets
 
@@ -140,14 +142,14 @@ Since we've already looked at setting up the controller layer, let's start with 
 
 ## Storing data
 
-In case you're not familiar with localStorage, fear not: you don't need to be. It's as simple a key-value store as they come:
+In case you're not familiar with localStorage, fear not: you don't need to be. It's as simple a key-value store as they come.
 
 {% highlight javascript %}
 localStorage.setItem('ourKey', 'someValue')
 localStorage.getItem('ourKey') // => 'someValue'
 {% endhighlight %}
 
-Let's start by throwing out some sample code.
+This is what the storage part of our adapter looks like:
 
 {% highlight coffeescript %}
 class Store
@@ -196,4 +198,126 @@ This is due to localStorage not being able to store objects natively, but being 
 Although Backbone is designed for AJAX REST APIs out of the box, it supports any kind of backend through [an extremely simple synchronization interface](http://backbonejs.org/#Sync).
 We simply set `Backbone.sync` to an object responding to the basic CRUD operations -- _create_, _read_, _update_ and _delete_.
 
+Let's add a `sync` method to our store, along with some helper methods.
 
+_Note: We're using a read-only API, so we don't really handle writing to the store. It should, however, be easy enough to implement by triggering a change event._
+
+{% highlight coffeescript %}
+class Store
+  
+  # ...
+  
+  # Attaches to Backbone.sync
+  # 
+  # method:  either "create", "read", "update" or "delete"
+  # model:   the model instance or model class in question
+  # options: carries callback functions
+  sync: (method, model, options) =>
+    resp = false
+    schemaName = @getSchemaName(model)
+    
+    # Switch over the possible methods
+    switch method
+    
+      when "create"
+        # In our case, we never create models directly
+        console.log "This shouldn't happen."
+        
+      when "read"
+        # Read one or all models, depending on whether id is set
+        resp = if model.id then
+          @find(schema, model.id)
+        else
+          @findAll(schema)
+        
+        unless resp
+          return options.error("Not found.")
+        
+      when "destroy"
+        # Perform a fake destroy
+        resp = true
+    
+    # Fire the appropriate callback
+    if resp
+      options.success(resp)
+    else
+      options.error("Unknown error.")
+  
+  # Simple getters for one or all models in a schema
+  find: (schema, id) ->
+    @data[schema] && @data[schema][id]
+  findAll: (schema) ->
+    _.values(@data[schema]) || []
+  
+  # Models either have a schema name attached to themselves
+  # or through their collections
+  getSchemaName: (model) ->
+    if model.schemaName
+      model.schemaName
+    else if model.collection && model.collection.schemaName
+      model.collection.schemaName
+
+# Export and attach to Backbone.sync
+this.store = new Store(['contacts'])
+Backbone.sync = this.store.sync
+{% endhighlight %}
+
+Overriding the Backbone.sync allows Backbone to talk to our store, but web sockets are a two way street, and we still don't have any way of telling our Backbone collections of incoming data.
+
+So, to the actual talking _to_ Backbone part...
+A simple way to allow collections to subscribe to changes to schemas is to trigger an event when adding items from the backend.
+Let's add to our `addItems` method.
+
+{% highlight diff %}
+  addItems: (schema, items) ->
+    
+    # Add or overwrite existing items
+    _.extend(@data[schema], items)
+    
+    # Write cache to store
+    @save()
++   
++   # Fire a notification passing the changed ids
++   payload = {}
++   payload[schema] = _.keys(items)
++   dispatch.trigger("store:change:#{schema}", payload)
+{% endhighlight %}
+
+Here is an example of a Backbone collection integrating with this event mechanism:
+
+{% highlight coffeescript %}
+class ContactCollection extends Backbone.Collection
+  
+  model: Contact
+  
+  # We don't use URLs in our protocol, but 
+  # Backbone requires that we set it...
+  url: ''
+  
+  # We'll need to define a schema name for use
+  # in the Backbone.sync method of our store
+  schemaName: "contacts"
+  
+  initialize: ->
+    # Bind to the store's appropriate change event
+    dispatch.on("store:change:#{@schemaName}", 
+                @updateContacts, this)
+  
+  # Called whenever new data is inserted into 
+  # the data store.
+  updateContacts: (data) ->
+    
+    # The contacts property of the passed data is
+    # an array of ids of the changed contacts
+    contactIds = data[@schemaName]
+    
+    for contactId in contactIds
+      # Check if the contact exists
+      if conversation = @get(contactId)
+        # If it exists, simply _set_ its updated properties
+        conversation.set(store.find(@schemaName, contactId))
+      else
+        # Elsewise, create it and add it
+        contactData = store.find(@schemaName, contactId)
+        @add(new Contact(contactData))
+{% endhighlight %}
