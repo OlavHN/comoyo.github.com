@@ -321,3 +321,15 @@ class ContactCollection extends Backbone.Collection
         contactData = store.find(@schemaName, contactId)
         @add(new Contact(contactData))
 {% endhighlight %}
+
+# That's it!
+
+That should cover integrating Backbone with our particular web socket protocol.
+
+Note that this approach is especially well suited to our particular use case, and there are probably both easier and better ways to integrate with other protocols.
+However, this approach works well with our particular case, with its event-driven and asynchronous design.
+
+## Resources
+
+Other people have integrated Backbone with web sockets before us.
+However, they all seem to be using Node.js with socket.io, so we thought we'd share our slightly different approach.
