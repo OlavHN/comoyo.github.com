@@ -35,3 +35,13 @@ authors:
     twitter: havardge
     about: |
       Summer intern at Comoyo. Currently working on the OAuth 2.0 project. Enjoys programming puzzles and danish pastries.
+  myrlund:
+    name: Jonas Myrlund
+    position: Software Developer Intern
+    gravatar: 32738b0ba76006f2f57c3dac162fe87a
+    web: http://myrlund.github.com
+    github: myrlund
+    twitter: myrlund
+    about: |
+      Summer intern at Comoyo. Web development, music and craft beer enthusiast. 
+      Former head of web development at [Samfundet](http://samfundet.no), currently runs its night club and catering operations.
