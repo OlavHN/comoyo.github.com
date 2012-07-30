@@ -35,3 +35,12 @@ authors:
     twitter: havardge
     about: |
       Summer intern at Comoyo. Currently working on the OAuth 2.0 project. Enjoys programming puzzles and danish pastries.
+  bruun:
+    name: Thomas Bruun
+    position: Software Developer Intern
+    gravatar: 166383039febfbcc00f106b90ad82975
+    web:  
+    github: bruun
+    twitter: tbruun
+    about: |
+      Summer intern at Comoyo. Hacking away in JavaScript all summer long.
