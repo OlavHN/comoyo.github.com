@@ -183,3 +183,5 @@ Here the `WebSocketEvent` is an implementation of the [ChannelEvent](http://docs
 A JSON object is extracted from the message, converted to a byte array, and wrapped in a WebSocket frame. The `WebSocketFrameEncoder` encodes the message into a ChannelBuffer, and sends it out on the socket.
 
 At last, the packet arrives in our browser.
+
+[Comment on Hacker News](http://news.ycombinator.com/item?id=4311873)
