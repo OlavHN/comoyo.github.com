@@ -163,8 +163,8 @@ _It's easy to implement, and the message sequences are easily understood from th
 
 # The storage layer
 
-We want a persistence layer capable of two things: storing data received from the backend controllers, and talking to the front-end part of our app.
-Since we've already looked at setting up the controller layer, let's start with the former: _storing data from the backend controllers_.
+We want a persistence layer capable of two things: _storing data_ received from the backend controllers, and _talking to the front-end_ part of our app.
+Since we've already looked at setting up the controller layer, let's start with the former: storing data from the backend controllers.
 
 ## Storing data
 
@@ -177,7 +177,7 @@ localStorage.getItem('ourKey') // => 'someValue'
 
 Next, we run into a small problem in that localStorage doesn't support storing objects. It is, however, pretty good at strings.
 A simple solution is to serialize our objects into the store.
-To make it so, we encapsulate the localStorage with an event-driven storage object:
+To make it so, we encapsulate the localStorage in an event-driven storage object:
 
 {% highlight coffeescript %}
 class Store
@@ -221,7 +221,7 @@ class Store
 ## Talking to Backbone
 
 Although Backbone is designed for AJAX REST APIs out of the box, it supports any kind of backend through [an extremely simple synchronization interface](http://backbonejs.org/#Sync).
-We simply set `Backbone.sync` to a function that in some way can handle the basic CRUD operations -- _create_, _read_, _update_ and _delete_.
+One simply sets `Backbone.sync` to a function that in some way can handle the basic CRUD operations -- _create_, _read_, _update_ and _delete_.
 
 Let's add a `sync` method to our store, along with some helper methods.
 
@@ -352,7 +352,7 @@ class ContactCollection extends Backbone.Collection
 That should cover integrating Backbone with an arbitrary web socket protocol.
 
 Note that this approach is especially well suited to our particular use case, and there are probably both easier and better ways to integrate with other protocols.
-However, our approach should be generic enough to be fitted to any sensible protocol.
+However, our approach should be generic enough to be fitted to any sensible situation.
 
 # Issues
 
