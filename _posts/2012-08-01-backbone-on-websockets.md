@@ -22,7 +22,7 @@ _**Heads up!** This article focuses on integrating Backbone with an asynchronous
 A pretty simple layered architecture emerged.
 
 <div class="thumbnail">
-  <img src="/images/posts/backbone-on-websockets-layers.png" alt="Our layered architecture" title="Our layered architecture">
+  <img src="/assets/img/posts/backbone-websockets/layers.png" alt="Our layered architecture" title="Our layered architecture">
 </div>
 
 Before we take a stroll through the layers, let's talk about the glue: _the event dispatch_.
