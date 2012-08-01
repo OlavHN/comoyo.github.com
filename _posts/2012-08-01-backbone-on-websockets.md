@@ -12,7 +12,7 @@ The natural platform choice became WebSocket-heavy HTML5.
 After [implementing a WebSocket handler in our Netty backend](http://comoyo.github.com/blog/2012/07/30/integrating-websockets-in-netty/) we started thinking about our client-side technology stack.
 Apart from using WebSockets for server communication, we decided to use localStorage for client-side storage and cache, and Backbone.js for the actual front-end.
 As Backbone.js depends on [Underscore.js](http://underscorejs.org/), we'll just as well use it throughout the application.
-To speed up development, we decided to go for CoffeeScript instead of pure JavaScript.
+To speed up development, we decided to go for [CoffeeScript](http://coffeescript.org/) instead of pure JavaScript.
 
 Other people have integrated Backbone with web sockets before us.
 However, they all seem to be using Node.js with Socket.io, so we thought we'd share our slightly different approach.
@@ -104,7 +104,7 @@ A large part of the protocol we implemented relies upon sequences of messages. T
 3. We request the changed resource
 4. We receive the resource
 
-An example of how to implement such a sequential protocol? Let's take a look at our login controller.
+Let's take a look at our login controller for an example of how to implement this sequential protocol.
 
 A simplified version of out login process should clarify the pattern. It consists of only two simple sequential steps:
 
@@ -358,7 +358,7 @@ However, our approach should be generic enough to be fitted to any sensible situ
 
 On our journey, we ran into some issues that you might do well to keep in mind if you're trying to do something similar to us.
 
-## localStorage is completely unencrypted
+## LocalStorage is completely unencrypted
 
 Without a backend rendering our HTML, we don't have any safe place to store user credentials. We're also handling sensitive data, which shouldn't be left plainly stored in any computer's web cache.
 
