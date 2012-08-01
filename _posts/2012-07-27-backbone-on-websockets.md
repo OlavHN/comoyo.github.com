@@ -9,11 +9,22 @@ When we arrived at Comoyo for our summer internship, we were given a pretty exci
 
 The natural platform choice became WebSocket-heavy HTML5.
 
-After [implementing a WebSocket handler in our Netty backend](...) we started thinking about our client-side technology stack. Apart from using WebSockets for server communication, we decided to use localStorage for client-side storage and cache, and Backbone.js for the actual front-end. To speed up development, we decided to go for CoffeeScript instead of pure JavaScript.
+After [implementing a WebSocket handler in our Netty backend](http://comoyo.github.com/blog/2012/07/30/integrating-websockets-in-netty/) we started thinking about our client-side technology stack. Apart from using WebSockets for server communication, we decided to use localStorage for client-side storage and cache, and Backbone.js for the actual front-end. To speed up development, we decided to go for CoffeeScript instead of pure JavaScript.
+
+Other people have integrated Backbone with web sockets before us.
+However, they all seem to be using Node.js with socket.io, so we thought we'd share our slightly different approach.
 
 _**Heads up!** This article focuses on integrating Backbone with an asynchronous web socket protocol, and assumes some level of comprehension of how Backbone works. Please check out [the Backbone documentation](http://backbonejs.org/) and [its examples](http://backbonejs.org/#examples) for a quick introduction before checking back._
 
-# Event-driven web sockets
+A pretty simple layered architecture emerged.
+
+<div class="thumbnail">
+  <img src="/images/posts/backbone-on-websockets-layers.png" alt="Our layered architecture" title="Our layered architecture">
+</div>
+
+Before we take a stroll through the layers, let's talk about the glue: _the event dispatch_.
+
+### The event dispatch
 
 To let the components talk to each other in a nice and loose fashion, we needed some sort of event dispatch system. Luckily, it turns out Backbone supplies it for absolutely free through its `Backbone.Events` class:
 
@@ -21,9 +32,9 @@ To let the components talk to each other in a nice and loose fashion, we needed 
 window.dispatch = _.clone(Backbone.Events)
 {% endhighlight %}
 
-Using the event dispatch is easy: you subscribe to and trigger events with `dispatch.on(eventName, payload)` and `dispatch.trigger(eventName, payload)` respectively.
+Using the event dispatch is easy: you subscribe to and trigger events with `dispatch.on(eventName, callback)` and `dispatch.trigger(eventName, payload)` respectively.
 
-## The server communicator
+## The communication layer
 
 With event dispatch in place, we naturally started with the bottom layer: the communication layer.
 
@@ -75,14 +86,24 @@ class Communicator
     @webSocket.send(strMessage)
 {% endhighlight %}
 
-## The protocol controllers
+The `Communicator` simply encapsulates the web sockets, wrapping them in a couple of simple messaging methods.
+This should make it easy as a breeze to swap our beloved WebSockets with [SSE](http://www.w3.org/TR/eventsource/) or [other long polling techniques](http://en.wikipedia.org/wiki/Push_technology), in case we want to provide working fallbacks in old browsers, for instance.
+
+### The protocol controllers
 
 With our communicator in place, we can set up controllers handling the various parts of communication with the backend protocol.
 The controllers communicate through the `Communicator`: they listen to incoming messages through the event dispatch and send messages with `Communicator.sendMessage` calls.
 
-An example? Let's take a look at our login controller.
+A large part of the protocol we implemented relies upon sequences of messages. The typical pattern consists of the following steps:
 
-A simplified version of out login process consists of two simple steps, to be executed in sequence:
+1. We subscribe to a resource
+2. We're notified of a changed resource
+3. We request the changed resource
+4. We receive the resource
+
+An example of how to implement such a sequential protocol? Let's take a look at our login controller.
+
+A simplified version of out login process should clarify the pattern. It consists of only two simple sequential steps:
 
 1. Client registration
 2. Account login
@@ -132,15 +153,17 @@ class LoginController
       beHappy()
     else
       tryAgain()
-  
 {% endhighlight %}
 
-# The localStorage adapter
+The various commands listen to responses and fires the next step as soon as the response is handled.
+It's easy to implement, and the message sequences are easily deducted from the listener declarations in the controller initializer.
+
+## The storage layer
 
 We want a persistence layer capable of two things: storing data received from the backend controllers, and talking to the front-end part of our app.
 Since we've already looked at setting up the controller layer, let's start with the former: _storing data from the backend controllers_.
 
-## Storing data
+### Storing data
 
 In case you're not familiar with localStorage, fear not: you don't need to be. It's as simple a key-value store as they come.
 
@@ -193,14 +216,14 @@ class Store
 As you can see from the above code, we serialize our objects into the store.
 This is due to localStorage not being able to store objects natively, but being pretty good at storing strings.
 
-## Talking to Backbone
+### Talking to Backbone
 
 Although Backbone is designed for AJAX REST APIs out of the box, it supports any kind of backend through [an extremely simple synchronization interface](http://backbonejs.org/#Sync).
-We simply set `Backbone.sync` to an object responding to the basic CRUD operations -- _create_, _read_, _update_ and _delete_.
+We simply set `Backbone.sync` to a function that in some way can handle the basic CRUD operations -- _create_, _read_, _update_ and _delete_.
 
 Let's add a `sync` method to our store, along with some helper methods.
 
-_Note: We're using a read-only API, so we don't really handle writing to the store. It should, however, be easy enough to implement by triggering a change event._
+_**Note:** We're using a read-only API, so we don't really handle writing to the store. It should, however, be easy enough to implement by triggering a change event resulting in an appropriate backend call._
 
 {% highlight coffeescript %}
 class Store
@@ -322,14 +345,33 @@ class ContactCollection extends Backbone.Collection
         @add(new Contact(contactData))
 {% endhighlight %}
 
-# That's it!
+## That's it!
 
-That should cover integrating Backbone with our particular web socket protocol.
+That should cover integrating Backbone with an arbitrary web socket protocol.
 
 Note that this approach is especially well suited to our particular use case, and there are probably both easier and better ways to integrate with other protocols.
-However, this approach works well with our particular case, with its event-driven and asynchronous design.
+However, our approach should be generic enough to be fitted to any sensible protocol.
+
+## Issues
+
+On our journey, we ran into some issues that you might do well to keep in mind if you're trying to do something similar to us.
+
+### localStorage is completely unencrypted
+
+Without a backend rendering our HTML, we don't have any safe place to store user credentials. We're also handling sensitive data, which shouldn't be left plainly stored in any computer's web cache.
+
+We took some simple measures to secure our users' data:
+
+1. When a user logs out, we clear the entire localStorage.
+2. In the login form, we present an option for whether the computer in use is a public computer. If so, persist as little as possible.
+
+We've been looking into some recently matured client-side crypto libraries, and the possibilities of encrypting the store.
+However, there is no safe place to store the encryption key client-side, requiring us to get it from the server for every page reload, in turn requiring authentication.
+[This stackoverflow thread](http://stackoverflow.com/questions/2642043/html5-web-db-security) pretty much sums it up.
 
 ## Resources
 
-Other people have integrated Backbone with web sockets before us.
-However, they all seem to be using Node.js with socket.io, so we thought we'd share our slightly different approach.
+1. **[Introducing WebSockets](http://www.html5rocks.com/en/tutorials/websockets/basics/)** by HTML5 rocks -- a great intro to using WebSockets in HTML5
+2. **[backbone-localstorage.js](http://documentcloud.github.com/backbone/docs/backbone-localstorage.html)** by documentcloud -- a simple adapter for using Backbone with localStorage
+3. **[Understanding Backbone](https://github.com/kjbekkelund/writings/blob/master/published/understanding-backbone.md)** by Kim Joar Bekkelund -- a great tutorial on Backbone-ifying a typical jQuery app
+
