@@ -59,7 +59,7 @@ In return for our pledge,
 we get to submit the CV of one lucky girl to the three LadyCoders, and have
 them review it and give feedback to the candidate, with the aim of improving
 her chance for getting job interviews. So, we want to invite all coder girls
-who are interested in improving their CV to [send us an e-mail](jobs@comoyo.com)
+who are interested in improving their CV to [send us an e-mail](mailto:jobs@comoyo.com)
 and say something like *“I want to have an awesome CV!”* and you
 might be drawn as the lucky winner! 
 
