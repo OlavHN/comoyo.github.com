@@ -65,7 +65,7 @@ class Communicator
     jsonMessage = JSON.parse(strMessage)
   
     # Grab the command name, ie. the first root key (using Underscore.js)
-    fullCommandName = _.keys(jsonData)[0]
+    fullCommandName = _.keys(jsonMessage)[0]
     commandName = _.last(fullCommandName.split('.'))
   
     # Trigger the command in event dispatch, passing the payload
@@ -375,3 +375,4 @@ However, there is no safe place to store the encryption key client-side, requiri
 2. **[backbone-localstorage.js](http://documentcloud.github.com/backbone/docs/backbone-localstorage.html)** by documentcloud -- a simple adapter for using Backbone with localStorage
 3. **[Understanding Backbone](https://github.com/kjbekkelund/writings/blob/master/published/understanding-backbone.md)** by Kim Joar Bekkelund -- a great tutorial on Backbone-ifying a typical jQuery app
 
+**Edit:** Fixed small error in the `Communicator` code example.
