@@ -19,7 +19,7 @@ authors:
       for [ISFiT](http://www.isfit.org).
   ingridod:
     name: Ingrid Oline Skeide Ødegaard
-    position: Product Manager
+    position: Developer community contact
     gravatar: f88eeb727d6867b2fcaccad00f8037c4
     web: http://www.comoyo.com
     github: ingridod
@@ -57,3 +57,12 @@ authors:
       Former head of web development at [Samfundet](http://samfundet.no), currently runs its night club and catering operations.
       Strong supporter of cinnamon buns.
   markusbk:
+    name: Markus Krüger
+    position: Senior Software Engineer
+    gravatar: 2f6800f011b29365b0fc352d57889e0b
+    web: https://github.com/markusbk
+    github: markusbk
+    twitter: markusbk
+    about: |
+      Getting paid for having fun with curly bracket languages, performance testing, scheduling, and scalability through streaming. 
+      Likes to make large things go fast. Usually goes for the chocolate mousse.
