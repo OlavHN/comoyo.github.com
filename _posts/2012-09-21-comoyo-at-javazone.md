@@ -19,7 +19,9 @@ Some components thought to "just work" (such as load balancers) were discovered 
 
 We did all of this, we learned how to harness the tools, we delivered the Tippeliga, and we did it all in just a few weeks. In this talk we share some of the hard won lessons on how to write tests, interpret their results, and how to actually tune a system for high performance.
 
-<iframe src="http://player.vimeo.com/video/49484335" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/49484335">Real-World Performance Testing in AWS</a> from <a href="http://vimeo.com/javazone">JavaZone</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+<iframe src="http://player.vimeo.com/video/49484335" width="500" height="281" frameborder="0">test</iframe> 
+
+<p><a href="http://vimeo.com/49484335">Real-World Performance Testing in AWS</a> from <a href="http://vimeo.com/javazone">JavaZone</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 
 ##Reliable scalability with MongoDB##
 By [Markus Krüger](https://github.com/markusbk), Senior Software Engineer
@@ -28,7 +30,9 @@ Many developers are discovering that traditional relational databases make it ha
 
 The talk describes how we configured replication, and our approach to work around the lack of transactions in MongoDB. There will be pointers on tuning MongoDB for availability and reliability. Also, the talk will describe how we used MongoDB to implement once-and-only-once messaging semantics on top of Amazon Simple Queuing Service (SQS).
 
-<iframe src="http://player.vimeo.com/video/49368447" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/49368447">Reliable Scalability with MongoDB</a> from <a href="http://vimeo.com/javazone">JavaZone</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+<iframe src="http://player.vimeo.com/video/49368447" width="500" height="281" frameborder="0">test</iframe> 
+
+<p><a href="http://vimeo.com/49368447">Reliable Scalability with MongoDB</a> from <a href="http://vimeo.com/javazone">JavaZone</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 
 ##Cloudname, a system for coordinating services##
 By [Haakon Dybdahl](https://github.com/dybdahl), Senior Software Engineer
@@ -39,7 +43,9 @@ The Cloudname library aims to provide a minimal set of coordination and configur
 
 It is an important point that Cloudname is implemented as a library that uses Apache ZooKeeper to perform its heavy lifting.
 
-<iframe src="http://player.vimeo.com/video/49372218" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/49372218">Cloudname, a system for coordinating services</a> from <a href="http://vimeo.com/javazone">JavaZone</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+<iframe src="http://player.vimeo.com/video/49372218" width="500" height="281" frameborder="0">tekst</iframe> 
+
+<p><a href="http://vimeo.com/49372218">Cloudname, a system for coordinating services</a> from <a href="http://vimeo.com/javazone">JavaZone</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 
 We look forward to next year’s Javazone and other conferences, and hope to see you there! 
 
