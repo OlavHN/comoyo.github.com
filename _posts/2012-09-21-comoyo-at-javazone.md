@@ -4,7 +4,7 @@ author: markusbk
 title: Comoyo at Javazone 2012
 category: Test
 ---
-[Javazone](http://jz12.java.no/) is one of the biggest conferences for software developers in Scandinavia, and took place in Oslo this September. Comoyo was naturally present both in the audience and on the stage, where we shared some of the experiences we have gathered after 1,5 years of delivering film & TV streaming services.
+[JavaZone](http://jz12.java.no/) is one of the biggest conferences for software developers in Scandinavia, and took place in Oslo this September. Comoyo was naturally present both in the audience and on the stage, where we shared some of the experiences we have gathered after 1.5 years of delivering film & TV streaming services.
 
 Below you will find videos of the presentations made by Comoyo employees. If you have any questions, feedback or any experience you want to share on these topics, please comment below. 
 
