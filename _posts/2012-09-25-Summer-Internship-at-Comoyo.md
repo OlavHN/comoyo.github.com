@@ -30,5 +30,5 @@ Some highlights from the summer:
 - We work with cutting-edge technology - either we build it ourselves, or we use some of the latest things that have been released
 - You get to know our culture and can find out if this is the right place for you to work - if the answer is yes, a summer internship is the best way to get a full-time position.
 
-**[Apply for a summer internship now!](http://comoyo.recruiterbox.com/jobs/7655)**
+**[Apply for a summer internship now!](https://comoyo.recruiterbox.com/jobs/10751/)**
 
