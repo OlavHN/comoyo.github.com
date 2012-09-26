@@ -4,7 +4,7 @@ author: ingridod
 title: Summer internship at Comoyo?
 category: Test
 ---
-As part of the ever-changing internet industry, we at Comoyo are totally dependent on having fresh ideas and new thinking for solving the problems we’re facing. And we think that there few better ways get that kind of impulses than to involve students in our daily work. We currently have 4 students working part-time besides their studies, and we’re now hiring summer interns for 2013 - you can apply [here](http://comoyo.recruiterbox.com/jobs/7655)
+As part of the ever-changing internet industry, we at Comoyo are totally dependent on having fresh ideas and new thinking for solving the problems we’re facing. And we think that there few better ways get that kind of impulses than to involve students in our daily work. We currently have 4 students working part-time besides their studies, and we’re now hiring summer interns for 2013 - you can apply [here](https://comoyo.recruiterbox.com/jobs/10751/)
 
 This summer we had 9 summer interns, and they worked on a variety of projects: 
 - Building an internet messaging app using the Facebook integration in iOS 6
@@ -30,5 +30,5 @@ Some highlights from the summer:
 - We work with cutting-edge technology - either we build it ourselves, or we use some of the latest things that have been released
 - You get to know our culture and can find out if this is the right place for you to work - if the answer is yes, a summer internship is the best way to get a full-time position.
 
-[Apply for a summer internship now!](http://comoyo.recruiterbox.com/jobs/7655)
+**[Apply for a summer internship now!](http://comoyo.recruiterbox.com/jobs/7655)**
 
