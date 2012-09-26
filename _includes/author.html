@@ -8,9 +8,9 @@
 	{% endif %}
 	<p>
 		<b>Position:</b> {{author.position}}<br>
-		<b>Github:</b> <a href="http://www.github.com/{{author[1].github}}">{{author.github}}</a><br>
+		<b>Github:</b> <a href="http://www.github.com/{{author.github}}">{{author.github}}</a><br>
 		{% if author.twitter %}
-			<b>Twitter:</b> <a href="http://www.twitter.com/{{author[1].twitter}}">@{{author.twitter}}</a><br>
+			<b>Twitter:</b> <a href="http://www.twitter.com/{{author.twitter}}">@{{author.twitter}}</a><br>
 		{% endif %}
 		{% if author.web %}
 			<b>Web:</b> <a href="{{author.web}}">{{author.web}}</a>
