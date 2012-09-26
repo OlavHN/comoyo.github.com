@@ -15,7 +15,12 @@ This summer we had 9 summer interns, and they worked on a variety of projects:
 - Preparing our film service for A/B testing
 
 Some highlights from the summer: 
-//(Bilder)
+![Intro for summer students](/assets/img/posts/summerjobs2013/1kickoff.jpg)
+![Comoyo summer interns working](/assets/img/posts/summerjobs2013/2desks.jpg)
+![Comoyo summer interns socializing](/assets/img/posts/summerjobs2013/3dinner.jpg)
+![Meeting with all of Comoyo](/assets/img/posts/summerjobs2013/4allmeeting.jpg)
+![Lunch outside at Fornebu](/assets/img/posts/summerjobs2013/5fornebu_sun.jpg)
+![Summer interns final presentation](/assets/img/posts/summerjobs2013/6presentation.jpg)
 
 ##Why have a summer internship at Comoyo?##
 - You get to work on real problems that one of our regular employees have to solve unless you do it
