@@ -8,7 +8,7 @@ As part of the ever-changing internet industry, we at Comoyo are totally depende
 
 This summer we had 9 summer interns, and they worked on a variety of projects: 
 - Building an internet messaging app using the Facebook integration in iOS 6
-- Creating a web interface in HTML5 and [WebSockets (Blog posts [1](http://comoyo.github.com/blog/2012/07/30/integrating-websockets-in-netty/) & [2](http://comoyo.github.com/blog/2012/08/01/backbone-on-websockets/) )
+- Creating a web interface in HTML5 and [WebSockets - Blog posts [1](http://comoyo.github.com/blog/2012/07/30/integrating-websockets-in-netty/) & [2](http://comoyo.github.com/blog/2012/08/01/backbone-on-websockets/)
 - Prototyping an implementation of OAuth 2.0
 - Building a notifications service that can send SMS and e-mail to customers
 - Playing around with analytics data to see how they can be used to improve our products and customer service
