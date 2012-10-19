@@ -77,3 +77,13 @@ authors:
       A programmer caught somewhere between frontend and backend development. Interested in 
       finding stuff, making code from coffee and long walks by the C. Comes from a cold place,
        but has a hot temper. An avid Homebrewer and beer lover, but is partial to apple cake and mango muffins.
+  lars:
+    name: Lars Eirik Eide
+    position: Product Manager
+    gravatar: d32116840c6486ea9243e9cb5a2602ee
+    web:  www.comoyo.com
+    github: larslarsoglars
+    twitter: 
+    about: |
+      Former tabloid journalist now working with user experience, i.e. designing products that give you what you didn't know you wanted. 
+      Always wears a tie, and loves candy.
