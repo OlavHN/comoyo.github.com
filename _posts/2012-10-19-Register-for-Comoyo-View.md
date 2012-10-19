@@ -1,7 +1,7 @@
 ---
 layout: post
 author: lars
-title: Register as a test user for our new video subscription service: Comoyo View
+title: Register as a test user for our new video subscription service - Comoyo View
 category: Test
 ---
 
