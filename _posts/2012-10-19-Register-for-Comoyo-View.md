@@ -14,6 +14,6 @@ The new subscription service will be developed entirely in-house, by people who 
 
 If you want to help us on the journey to becoming the best video streaming service in the world - [sign up here](http://signup.comoyo.com/view/) and we will notify you when the service is ready for testing! 
 
-![Signup page](/assets/img/posts/summerjobs2013/view-register.png)
+![Signup page](/assets/img/posts/signup_view/view-register.png)
 
 
