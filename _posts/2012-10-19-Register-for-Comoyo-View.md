@@ -4,6 +4,7 @@ author: lars
 title: Register as a test user for our new video subscription service: Comoyo View
 category: Test
 ---
+
 If you have visited our current [movie store](https://www.comoyo.com), you have probably noticed that we only sell access to one movie at a time. This can become expensive and tiresome if you’re a movie buff, so to make your life easier we will soon be launching a new product where you can watch as many movies and series episodes as you like for a fixed monthly price. 
 
 The service will be far from perfect at first, but it will be a starting point for iterations based on the feedback we get. We will actively ask you for feedback once you start testing the service, and hope to make improvements continuously after the launch. 
