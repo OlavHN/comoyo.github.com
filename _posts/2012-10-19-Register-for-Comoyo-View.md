@@ -13,7 +13,7 @@ Our long term goal is to become an internet provider of film and TV on all devic
 
 The new subscription service will be developed entirely in-house, by people who love film and are passionate about user experience. Since we launched our first streaming service a year ago, we have learned a great deal about what kind of technology is needed to deliver a great user experience and we are now making investments that will be soon be visible.
 
-If you want to help us on the journey to becoming the best video streaming service in the world - [sign up here](http://signup.comoyo.com/view/) and we will notify you when the service is ready for testing! 
+**If you want to help us on the journey to becoming the best video streaming service in the world - [sign up here](http://signup.comoyo.com/view/) and we will notify you when the service is ready for testing!** 
 
 ![Signup page](/assets/img/posts/signup_view/view-register.png)
 
