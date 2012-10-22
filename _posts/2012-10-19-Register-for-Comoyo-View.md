@@ -2,7 +2,7 @@
 layout: post
 author: lars
 title: Become one of the first to test our new video subscription service - View
-category: Test
+category: Products
 ---
 
 If you have visited our current [movie store](https://www.comoyo.com), you have probably noticed that we only sell access to one movie at a time. This can become expensive and tiresome if you’re a movie buff, so to make your life easier we will soon be launching a new product where you can watch as many movies and series episodes as you like for a fixed monthly price. 
