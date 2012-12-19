@@ -35,4 +35,4 @@ Are you interested in getting involved with Firefox OS as a developers, by build
 
 Want to create a web app today? [Here’s how to get started.](https://developer.mozilla.org/en-US/docs/Apps/Getting_Started) 
 
-![Test phone with Firefox OS at Comoyo](/assets/img/posts/firefox-os/firefox-phone.JPG)
+![Test phone with Firefox OS at Comoyo](/assets/img/posts/firefox-os/firefox-phone_r.JPG)
