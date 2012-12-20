@@ -33,7 +33,7 @@ We in Comoyo and Telenor Digital Services are excited to be able to support this
 
 Are you interested in getting involved with Firefox OS as a developers, by building apps or contributing to the OS? [Sign up here to get news about our future developer community events in the Nordics](http://unbouncepages.com/firefox-os/). 
 
-Want to create a web app today? [Here’s how to get started.](https://developer.mozilla.org/en-US/docs/Apps/Getting_Started) 
+Want to create a web app today? [Here’s how to get started.](https://developer.mozilla.org/en-US/docs/Apps/Getting_Started) Or, you can try the [Firefox OS simulator](https://hacks.mozilla.org/2012/12/firefox-os-simulator-1-0-is-here/)
 
 ![Test phone with Firefox OS at Comoyo](/assets/img/posts/firefox-os/firefox-phone_r.JPG)
 
