@@ -34,7 +34,7 @@ For developers, this is a great chance to expose the app and drive growth, which
 - Optional technical coaching by a member of Comoyo Engineering (app code quality, architecture, scalability etc.)
 
 ##How do I participate?##
-Submit your app for boosting by sending an e-mail to **appbooster@comoyo.com** with a max. two-page description of your app and why it is relevant to Telenor customers in Norway.
+Submit your app for boosting by sending an e-mail to **[appbooster@comoyo.com](mailto:appbooster@comoyo.com)** with a max. two-page description of your app and why it is relevant to Telenor customers in Norway.
 
 Winners are approved by a committee consisting of people from Comoyo and Telenor Norway.
 **Deadline for submission: January 21, 2012.**
