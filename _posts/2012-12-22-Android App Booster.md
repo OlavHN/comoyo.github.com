@@ -1,7 +1,7 @@
 ---
 layout: post
 author: terje
-title: Want more customers to your Android app? Submit your app to Android App Booster competition
+title: Get more customers for your Android app - Submit it to Android App Booster competition 
 category: Apps
 ---
 
