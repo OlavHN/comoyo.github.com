@@ -39,4 +39,4 @@ Want to create a web app today? [Here’s how to get started.](https://developer
 
 *A shortened version of this blog post in Norwegian was published on [Digi.no 19.12.2012](http://www.digi.no/908368/lenge-leve-aapenhet-paa-mobilen).*
 
-*[Comments on HackerNews](http://news.ycombinator.com/item?id=4942060)*
+*[Comments on Hacker News](http://news.ycombinator.com/item?id=4942060)*
