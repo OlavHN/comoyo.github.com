@@ -4,7 +4,7 @@ author: ingridod
 title: Comoyo's first Hackathon! 
 category: Organization
 ---
-<iframe src="http://player.vimeo.com/video/57878150" width="500" height="281" frameborder="0"</iframe> <p><a href="http://vimeo.com/57878150">Comoyo Hackathon January 2013</a> from <a href="http://vimeo.com/user15439630">Comoyo</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+<iframe src="http://player.vimeo.com/video/57878150" width="500" height="281" frameborder="0">x</iframe> <p><a href="http://vimeo.com/57878150">Comoyo Hackathon January 2013</a> from <a href="http://vimeo.com/user15439630">Comoyo</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 
 Being a startup that makes things on the internet, we by definition live in the fastest changing industry ever.
 
