@@ -27,6 +27,6 @@ Some of the projects worked on during the Hackathon were:
 - Tetris monitoring visualization of real-time events on Comoyo film (events like playing film, a payment going through, a user logging in etc.)
 ![Monitris](/assets/img/posts/hackathon/Monitris.png)
 
-If you have ideas for stuff you would like to see developed for our services, please leave a comment below! 
+If you have ideas for stuff you would like to see developed for our services, please leave a comment below! And if you want to join our next Hackathon, you can [apply for a job](https://comoyo.recruiterbox.com/) in our team. 
 
 
