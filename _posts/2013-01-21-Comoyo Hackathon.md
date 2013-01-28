@@ -12,7 +12,7 @@ We have no idea if what we're making now will succeed, or what we will be workin
 
 Often, the things that become immensely successful were not originally intended as products, or they just started as a small idea. Great products are made up of lots of small details that together make up an whole. It is not easy to tell what these details should be, so the only way is to prototype and test it. We in Comoyo are working hard to to build a culture of constantly prototyping and testing stuff on real customers, and so we decided to devote two days to just prototyping and socializing, and conclude the whole thing with serving our own home-brewed Comoyo Christmas Beer (which didn’t get ready for Christmas):
 
-[Comoyo Christmas Beer](/assets/img/posts/hackathon/Comoyo-beer-brewing.JPG)
+![Comoyo Christmas Beer](/assets/img/posts/hackathon/Comoyo-beer-brewing.JPG)
 
 Some of the projects worked on during the Hackathon were:
 - Boxee app for our new video subscription service
@@ -25,7 +25,7 @@ Some of the projects worked on during the Hackathon were:
 - A simple surveillance system using [Raspberry Pi](http://www.raspberrypi.org/) and a webcam
 - A tracing system using [zipkin](https://github.com/twitter/zipkin)
 - Tetris monitoring visualization of real-time events on Comoyo film (events like playing film, a payment going through, a user logging in etc.)
-[Monitris](/assets/img/posts/hackathon/Monitris.png)
+![Monitris](/assets/img/posts/hackathon/Monitris.png)
 
 If you have ideas for stuff you would like to see developed for our services, please leave a comment below! 
 
