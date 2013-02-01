@@ -34,4 +34,4 @@ When you're ready to debug an application, add the following line to your index.
 
 For 15 years we built software to develop, design and debug on the web. It's incredible to see that we can leverage all this existing technology and integrate them into our Firefox OS build chain with hardly any effort. I you had any doubt whether Firefox OS was the number one choice for developers, this is the moment for you to reconsider.
 
-_Our debugging process has also been written up by [Mozilla](https://hacks.mozilla.org/2013/01/remote-debugging-firefox-os-with-weinre/)_ 
+*Our debugging process has also been written up by [Mozilla](https://hacks.mozilla.org/2013/01/remote-debugging-firefox-os-with-weinre/)*
