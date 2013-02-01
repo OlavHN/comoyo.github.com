@@ -10,7 +10,7 @@ On the other hand Firefox OS, the best thing to have happened since the inventio
 
 By combining these two facts, plus given that the Firefox OS UI layer is completely written in web standards, it's only natural that we at Telenor Comoyo (ok, ok, Kevin Grandon came up with the original idea) started hacking on superawesomeincrediblegreat integration of Weinre and Firefox OS. That means: live viewing and manipulating your app markup; live editing of styles and live code injection. All from your desktop and directly accessible on your developer phone. Now try that on any other mobile platform. But Jan, how do we know that it actually works? Well dear folks, here is a video:
 
-<iframe width="420" height="315" src="http://www.youtube.com/embed/UiZSEkdAKAA" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/UiZSEkdAKAA" frameborder="0"></iframe>
 
 **I want it**
 
