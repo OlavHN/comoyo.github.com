@@ -114,6 +114,7 @@ authors:
     github: bakksjo
     twitter: bakksjo
     about: |
+      something
   jan:
     name: Jan Jongboom
     position: Software Engineer, Firefox OS team 
@@ -122,5 +123,5 @@ authors:
     github: janjongboom
     twitter: janjongboom
     about: |
-    Jan got in a real life fight when someone declared JavaScript 'just some scripting language'. Now he set out to take over the mobile world with Firefox OS. 
-    You can see him live on stage regularly, with talks mobile development. As for dessert, beer goes a long way. 
+      Jan got in a real life fight when someone declared JavaScript 'just some scripting language'. Now he set out to take over the mobile world with Firefox OS. 
+      You can see him live on stage regularly, with talks mobile development. As for dessert, beer goes a long way. 
