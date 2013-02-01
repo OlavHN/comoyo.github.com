@@ -4,6 +4,7 @@ author: jan
 title: Get your weinre out, remote debugging for Firefox OS
 category: Firefox OS
 ---
+
 As all mobile developers should know [Weinre](http://people.apache.org/~pmuellr/weinre/docs/latest/) is the best thing to have happened to mankind since American Idol got cancelled. It allows you to connect the Chrome Debugger Tools to a remote mobile device and use awesomeness like Element inspection, CSS manipulation and javascript execution to do debugging on steroids. No more `alert` style debugging your mobile websites. Speed++.
 
 On the other hand Firefox OS, the best thing to have happened since the invention of in-plane WiFi (guess where I'm writing this blog post), lacks a proper way to debug applications after deploying them to your shiny new phone.
@@ -12,7 +13,7 @@ By combining these two facts, plus given that the Firefox OS UI layer is complet
 
 <iframe width="420" height="315" src="http://www.youtube.com/embed/UiZSEkdAKAA" frameborder="0"></iframe>
 
-**I want it**
+*I want it*
 
 Sure, here's how you'll get started:
 
@@ -33,4 +34,4 @@ When you're ready to debug an application, add the following line to your index.
 
 For 15 years we built software to develop, design and debug on the web. It's incredible to see that we can leverage all this existing technology and integrate them into our Firefox OS build chain with hardly any effort. I you had any doubt whether Firefox OS was the number one choice for developers, this is the moment for you to reconsider.
 
-_Our debugging process has also been written up by [Mozilla](https://hacks.mozilla.org/2013/01/remote-debugging-firefox-os-with-weinre/)._ 
+_Our debugging process has also been written up by [Mozilla](https://hacks.mozilla.org/2013/01/remote-debugging-firefox-os-with-weinre/)_ 
