@@ -114,3 +114,15 @@ authors:
     github: bakksjo
     twitter: bakksjo
     about: |
+  jan:
+    name: Jan Jongboom
+    position: Software Engineer, Firefox OS team 
+    gravatar: 672b033bf66f18d40cff3278f12f8f90
+    web:  www.comoyo.com
+    github: janjongboom
+    twitter: janjongboom
+    about: |
+    Jan got in a real life fight when someone declared JavaScript 'just some scripting language'. 
+    He used to channel his JavaScript love as a member of the Cloud9 IDE development team, making bad jokes about 
+    VBScript and dreaming of happy hour. Now he set out to take over the mobile world with Firefox OS. 
+    You can see him live on stage regularly, with talks about Cloud9, node.js, scaling and mobile development.
