@@ -109,12 +109,18 @@ authors:
   bakksjo:
     name: Øyvind Bakksjø
     position: Development Manager, Comoyo Trondheim
-    gravatar: 6c80b8bf935ac2f4853852b74ff7bbdd
-    web:  www.comoyo.com
+    gravatar: 7ae7151d16b14819d9656a2a9ef1f1dc
+    web: http://www.linkedin.com/in/backsea
     github: bakksjo
     twitter: bakksjo
     about: |
-      something
+      Øyvind Bakksjø is a software developer who is not smart enough to maintain
+      complex code. As a survival strategy, he has developed a talent for
+      identifying antipatterns and writing code that you can read and understand.
+      He has great attention to detail and is a much feared code reviewer. The
+      only circumstance under which he’d stop developing software is if he could
+      somehow support himself while spending his time kayaking the world’s
+      whitewater.
   jan:
     name: Jan Jongboom
     position: Software Engineer, Firefox OS team 
