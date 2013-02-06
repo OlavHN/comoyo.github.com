@@ -32,7 +32,8 @@ know that it actually works? Well dear folks, here is a video:
 
 <object width="420" height="315"><param name="movie" value="http://www.youtube.com/v/UiZSEkdAKAA?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/UiZSEkdAKAA?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
 
-##I want it##
+
+##Great, I want it!##
 
 Sure, here's how you'll get started:
 
@@ -57,4 +58,4 @@ integrate them into our Firefox OS build chain with hardly any effort. I you
 had any doubt whether Firefox OS was the number one choice for developers, this
 is the moment for you to reconsider.
 
-**Our debugging process has also been written up by [Mozilla](https://hacks.mozilla.org/2013/01/remote-debugging-firefox-os-with-weinre/)**
+**This debugging process has also been written up by [Mozilla](https://hacks.mozilla.org/2013/01/remote-debugging-firefox-os-with-weinre/)**
