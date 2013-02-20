@@ -83,8 +83,8 @@ bought a fairly cheap 27-inch full HD IPS terminal, set it on top of a
 rolling Montana module, and put the Mac mini inside the module. The
 sweet Mac keyboard and glass mouse is on the living room table and
 when we don't use the new ‘TV’ arrangement we just roll it out of the
-way so it stands discretely against the wall. Meanwhile, the 27-inch Mac
-mini stays where it was on the bookshelf (see in the background) and is
+way so it stands discretely against the wall. Meanwhile, the 27-inch iMac 
+stays where it was on the bookshelf (see in the background) and is
 used primarily for school, gaming and work.
 
 This is how the new ‘TV’ looks inside:
@@ -99,11 +99,6 @@ Nah! With a couple of twists it’s actually quite sweet (but sure – a
 remote would spice it up even more)
 
 Let me show you some pictures.
-
-Here’s how my family watches TV/film when it is rolled into ‘viewing’
-position in our living room:
-
-<img src="/assets/img/posts/dogfooding/tv_view_usage.jpg" alt="TV Setup inside">
 
 This one shows how I set up the screen on the 27-inch iMac and the
 Mac mini that’s connected to the TV screen. I simply just dropped over
@@ -134,7 +129,7 @@ Wi-Fi.
 From a usability point of view, passwords and usernames on the
 different services are a hassle. Especially the ones that has a time-out
 on user credentials. The ones that don't have time-out help lowering the
-barrier for both Camilla and my kids to use that service.
+barrier for both my wife and my kids to use that service.
 
 **So, I recommend getting rid of the TV box. Cut the cord. It’s easy, fun,
 cheap and cool!**
