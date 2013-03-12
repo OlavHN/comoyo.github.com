@@ -10,6 +10,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean adipiscing felis
 > Dette er en liten test
 > <cite>Dag-Inge Aas</cite>
 
+Here’s how my family watches TV/film when it is rolled into ‘viewing’
+position in our living room:
+
+<img src="/assets/img/posts/dogfooding/tv_view_usage.jpg" alt="TV Setup inside">
 
 ##The Process#
 Aliquam erat volutpat. Etiam urna ligula, commodo sit amet viverra in, interdum eget nunc. Vestibulum mi massa, vehicula porttitor bibendum id, auctor et mauris. Mauris ac tempus odio. Proin nec justo purus. Praesent ligula tellus, rhoncus sed sollicitudin ac, porttitor in nunc. Suspendisse sagittis sollicitudin metus, at iaculis diam vulputate quis. Nam nunc leo, imperdiet eu dignissim a, euismod quis eros. Maecenas lorem ipsum, vulputate in iaculis id, eleifend at mi. Vestibulum tellus libero, condimentum et lobortis dignissim, pharetra sed nunc. Donec ac risus tristique enim cursus pulvinar.
