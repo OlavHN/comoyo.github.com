@@ -26,17 +26,15 @@ First things first. We need [node.js](http://nodejs.org/).
 
 Now execute the following commands in the terminal (or cmd.exe on Windows):
 
-```bash
-# Clone the template repository
-git clone https://github.com/comoyo/ffos-list-detail
-# Grab the UI library
-git submodule update --init --recursive
-# Install server side dependencies
-npm install
+	# Clone the template repository
+	git clone https://github.com/comoyo/ffos-list-detail
+	# Grab the UI library
+	git submodule update --init --recursive
+	# Install server side dependencies
+	npm install
 
-# AND START...
-node server.js
-```
+	# AND START...
+	node server.js
 
 We now have built a bare bone application that is excellent at showing a list, and showing a detail view! Go in any modern browser to [http://localhost:8081](http://localhost:8081) to see the app galore!
 
