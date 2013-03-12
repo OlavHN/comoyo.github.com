@@ -7,6 +7,7 @@ category: Firefox OS
 [The Gathering](http://www.gathering.org/tg13/en) (TG) is one of the largest nerd fests in the world, and this Easter no less than 5000 computer enthusiasts will gather in [Vikingskipet](https://upload.wikimedia.org/wikipedia/commons/3/3c/Vikingskipet_profile.jpg) at Hamar (27th - 31st of March). Of course Comoyo will be present at TG with a team of developers to act as mentors, scout for talent and get feedback on the stuff we’re working on.
 
 ![The Gathering 2009](/assets/img/posts/comoyo-at-TG/The_Gathering_2009_by_NRKbeta.jpg)
+
 _(Foto: Eirik Solheim / eirikso.com, 2009)_
 
 ##The future of apps##
