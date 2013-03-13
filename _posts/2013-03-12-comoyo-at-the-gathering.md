@@ -24,6 +24,8 @@ So, we want to use our presence at The Gathering to teach young developers how t
 ##Useful Phone Utility Compo - How do I participate?##
 To make it easier for you to get started, we have made this blog post about [how to make your first web app in 5 minutes](http://comoyo.github.com/blog/2013/03/12/first-ffos-app/)!
 
+Also, here is the official compo info at [gathering.org](http://www.gathering.org/tg13/no/creative/competition-rules/useful-phone-utility/).
+
 **Criterias for judging entries:**
 To be truly useful, an app must make the life of the user more fun and/or simple. The app should showcase cool things that can be done with HTML5 in combination with native phone APIs. Plus for apps which has a global market potential. We have a sense of humor, and appreciate crazy ideas.
 
