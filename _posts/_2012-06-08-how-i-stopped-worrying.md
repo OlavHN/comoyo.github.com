@@ -30,7 +30,8 @@ puts 'Hello World'
 - Kake er godt
 - Kake er godt
 
-<object width="420" height="315"><param name="movie" value="http://www.youtube.com/v/UiZSEkdAKAA?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/UiZSEkdAKAA?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+/YouTube embedding
+<iframe src="http://www.youtube.com/embed/vhTMm85G9GE" width="500" height="281" frameborder="0">test</iframe> 
 
 #What is an Atom Bomb, and why is it awesome?#
 Proin feugiat tempor lectus condimentum sodales. Donec ut turpis eget felis tincidunt cursus. Phasellus sed orci ac tortor gravida commodo. In vel tellus arcu. Duis id odio ac lacus volutpat semper consectetur ut risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In quam velit, luctus sed pretium ut, faucibus vel quam. Cras vitae lectus ut nisi adipiscing dignissim eu quis nisl. Nullam at enim sit amet neque tincidunt vehicula eu vitae enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris imperdiet mattis justo in sollicitudin. Aliquam viverra lacinia interdum. Morbi gravida aliquam tempor.
