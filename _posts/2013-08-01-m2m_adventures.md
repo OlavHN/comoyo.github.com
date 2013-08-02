@@ -1,11 +1,11 @@
 ---
 layout: post
 authors: [caroline, christian]
-title: Adventures in Machine to Machine communication
+title: Measuring water and air temperature with Arduino GSM shield
 category: M2M
 ---
 
-If you didn't know, Comoyo's offices at Fornebu are located pretty close to the water. What with the warm weather we've been having lately, many Comoyans spend their lunch break down by the beach, some even bringing towels and swimming gear. That gave us an idea: What better way to demonstrate machine to machine communication than to make a combined water/air temperature sensor? Making and demonstrating a working M2M prototype is the goal of the summer intern project we have been assigned to, so we might as well make something fun while we’re at it!
+If you didn't know, Comoyo's offices in Oslo are located pretty close to the water. With the warm weather we've been having lately, many Comoyans spend their lunch break down by the beach, some even bringing towels and swimming gear. That gave us an idea: What better way to demonstrate machine to machine communication than to make a combined water/air temperature sensor? Making and demonstrating a working M2M prototype is the goal of the summer intern project we have been assigned to, so we might as well make something fun while we’re at it!
 
 ![image](/assets/img/posts/m2m/matias-swimming.jpg)
 *Software Engineer Matias Holte enjoying the water at Fornebu, complete with sombrero*
