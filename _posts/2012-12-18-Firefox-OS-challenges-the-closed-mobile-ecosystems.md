@@ -29,7 +29,7 @@ Firefox OS aims to extend the freedom of the internet into the mobile ecosystem,
 Of course, there is no success guaranteed, and challenging the existing mobile ecosystems is a bold move. But there are no givens in today’s internet industry, as the devices available constantly evolve and converge, and users’ behavior can take unexpected turns.
 
 ##Want to be a part of developing Firefox OS?##
-We in Comoyo and Telenor Digital Services are excited to be able to support this initiative. **As a matter of fact, we are increasing our commitment to the development and look for excellent people who want to [join our team](https://comoyo.recruiterbox.com/jobs/11797/)*. 
+We in Comoyo and Telenor Digital Services are excited to be able to support this initiative. **As a matter of fact, we are increasing our commitment to the development and look for excellent people who want to [join our team](https://comoyo.recruiterbox.com/jobs/11797/)**. 
 
 Are you interested in getting involved with Firefox OS as a developers, by building apps or contributing to the OS? [Sign up here to get news about our future developer community events in the Nordics](http://unbouncepages.com/firefox-os/). 
 
