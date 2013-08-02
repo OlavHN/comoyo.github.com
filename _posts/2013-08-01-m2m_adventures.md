@@ -5,7 +5,7 @@ title: Adventures in Machine to Machine communication
 category: M2M
 ---
 
-If you didn't know, Comoyo's offices at Fornebu are located pretty close to the water. What with the warm weather we've been having lately, that means that many Comoyans spend their lunch break down by the beach, some even bring towels and swimming gear. That gave us an idea: What better way to demonstrate machine to machine communication than to make a combined water/air temperature sensor? Making and demonstrating a working M2M prototype is the goal of the summer intern project we have been assigned to, so we might as well make something fun while we’re at it!
+If you didn't know, Comoyo's offices at Fornebu are located pretty close to the water. What with the warm weather we've been having lately, many Comoyans spend their lunch break down by the beach, some even bringing towels and swimming gear. That gave us an idea: What better way to demonstrate machine to machine communication than to make a combined water/air temperature sensor? Making and demonstrating a working M2M prototype is the goal of the summer intern project we have been assigned to, so we might as well make something fun while we’re at it!
 
 ![image](/assets/img/posts/m2m/matias-swimming.jpg)
 *Software Engineer Matias Holte enjoying the water at Fornebu, complete with sombrero*
@@ -174,4 +174,6 @@ We chose a sturdy 1-litre food storage box with snap lid to accommodate both the
 
 While the placement of the sensor leads works well with the components inside, they are slightly too close to the lid snaps, making opening and closing the box more difficult. A second revision would probably have them placed closer to the bottom of the box.
 
-Once the box was finished, it was quite easy to strap the box to the beams at the test site, and using cable ties to fasten the water probe to the deck pillar.
+Once the box was finished, it was quite easy to strap the box to the beams at the test site with a luggage strap, and using cable ties to fasten the water probe to the deck pillar. The luggage strap is adjustable, making opening the box and switching the batteries relatively easy.
+
+As this post is getting quite long, we're going to have to round it off here - stay tuned for further adventures in machine to machine communication! We'll be discussing power usage and battery issues, as well as some problems we encountered during the project.
