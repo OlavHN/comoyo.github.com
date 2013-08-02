@@ -151,4 +151,22 @@ authors:
     twitter: 
     about: |
       Vidar is a young mathematician trying to become a software developer at Comoyo. In his spare time he solves Rubik's cubes, juggle, ride his unicycle in the woods or something else useful. His favorite dessert is passion fruite cheesecake. Not any passion fruit cheesecake, but the one they got in Lisbon. 
+  christian:
+    name: Christian Dancke Tuen
+    position: Summer intern at Comoyo.
+    gravatar: 5338057a67893247920e0d33d9094adf
+    web:  http://christiandt.com
+    github: christiandt
+    twitter:
+    about: |
+      Summer Intern at Comoyo. Video technician at [Samfundet](http://samfundet.no), spare time maker.
+  caroline:
+    name: Caroline Anne Sæhle
+    position: Summer intern at Comoyo.
+    gravatar: 3a87cbab80701433046ed4822542fcfe
+    web: 
+    github: CSaehle
+    twitter: CarolineSaehle
+    about: |
+      Summer Intern at Comoyo. Loves the smell of solder in the morning. Partial to lemon cheesecake and black tea.
 
