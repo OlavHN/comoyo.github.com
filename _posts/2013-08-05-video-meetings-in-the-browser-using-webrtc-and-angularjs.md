@@ -15,7 +15,7 @@ We at Comoyo have been interested in [WebRTC](http://www.w3.org) for a while now
 
 So, we thought, why not combine our interest in WebRTC with our need for an easier way to set up video meetings? As summer interns in Comoyo, we were assigned with the task of building an easy-to-use web conference system using WebRTC and HTML5. We were not really sure what would come out of this, but the result turned out to be so good that we decided to open it up to public testing in a beta version.
 
-**appear.in** was created to achieve one goal: **to make it really easy to start a video meeting.** To achieve this, we allow users to create a new video room in one click from the frontpage. You add people to the conversation by sharing the URL with them. When they open the URL, they will be taken straight into the room and asked to turn on their webcam and microphone. 
+**[appear.in](https://appear.in)** was created to achieve one goal: **to make it really easy to start a video meeting.** To achieve this, we allow users to create a new video room in one click from the frontpage. You add people to the conversation by sharing the URL with them. When they open the URL, they will be taken straight into the room and asked to turn on their webcam and microphone. 
 
 ##Features in the beta version##
 Like most developers, we do a lot of whiteboard drawing. But to our horror, none of the communication channels we have used to date, have an easy way to draw together right then and there. So to be able to share drawings, while still being able to share screens at the same time (because no one has the time to switch back and forth between tabs), we have often ended up doing this:
@@ -85,4 +85,6 @@ With this beta release we want people to test the service by using it as they no
 Feedback regarding call quality can be given in the form that appears when you click leave room and will be sent directly to us. 
 
 For any feedback, feature requests and/or bug reports, please contact us at [feedback@appear.in](mailto:feedback@appear.in), [Twitter](https://twitter.com/appear_in) or [Facebook](https://www.facebook.com/appear.in.video). 
+
+Visit [appear.in](https://appear.in)!
  
