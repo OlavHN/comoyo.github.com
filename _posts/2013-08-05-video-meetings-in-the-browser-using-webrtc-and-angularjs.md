@@ -1,6 +1,6 @@
 ---
 layout: post
-author: [johan, vegard, johnedvard]
+authors: [johan, vegard, johnedvard]
 title: Video meetings in the browser made simple using WebRTC and AngularJS
 category: WebRTC
 ---
