@@ -86,5 +86,5 @@ Feedback regarding call quality can be given in the form that appears when you c
 
 For any feedback, feature requests and/or bug reports, please contact us at [feedback@appear.in](mailto:feedback@appear.in), [Twitter](https://twitter.com/appear_in) or [Facebook](https://www.facebook.com/appear.in.video). 
 
-Visit [appear.in](https://appear.in)!
+**Visit [appear.in](https://appear.in)!**
  
