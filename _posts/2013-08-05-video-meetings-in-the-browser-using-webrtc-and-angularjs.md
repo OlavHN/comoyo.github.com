@@ -5,7 +5,7 @@ title: Video meetings in the browser made simple using WebRTC and AngularJS
 category: WebRTC
 ---
 
-TLDR; Test our new video meeting service in your browser at **[appear.in](https://appear.in) - built on WebRTC and AngularJS. No installs or login.
+TLDR; Test our new video meeting service in your browser at **[appear.in](https://appear.in)** - built on WebRTC and AngularJS. No installs or login.
 
 <object width="500" height="281"><param name="movie" value="//www.youtube.com/v/FWPNQAoatvg?hl=en_US&amp;version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/FWPNQAoatvg?hl=en_US&amp;version=3" type="application/x-shockwave-flash" width="500" height="281" allowscriptaccess="always" allowfullscreen="true"></embed></object>
 
