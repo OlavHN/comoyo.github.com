@@ -5,15 +5,17 @@ title: Video meetings in the browser made simple using WebRTC and AngularJS
 category: WebRTC
 ---
 
-TLDR; Test our new video meeting service in your browser at appear.in - built on WebRTC and AngularJS. No installs or login.
+TLDR; Test our new video meeting service in your browser at **[appear.in](https://appear.in) - built on WebRTC and AngularJS. No installs or login.
 
 <object width="500" height="281"><param name="movie" value="//www.youtube.com/v/FWPNQAoatvg?hl=en_US&amp;version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/FWPNQAoatvg?hl=en_US&amp;version=3" type="application/x-shockwave-flash" width="500" height="281" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+
+<p></p>
 
 We at Comoyo have been interested in [WebRTC](http://www.w3.org) for a while now, reading about it and experimenting with what is actually possible to do with it. Since our employees work in five different locations (Oslo, Trondheim, Stockholm, Amsterdam, Munich), the need for efficient communication tools is omnipresent. We have tested a lot of video conferencing solutions, who all have their advantages and disadvantages. 
 
 So, we thought, why not combine our interest in WebRTC with our need for an easier way to set up video meetings? As summer interns in Comoyo, we were assigned with the task of building an easy-to-use web conference system using WebRTC and HTML5. We were not really sure what would come out of this, but the result turned out to be so good that we decided to open it up to public testing in a beta version.
 
-appear.in was created to achieve one goal: **to make it really easy to start a video meeting.** To achieve this, we allow users to create a new video room in one click from the frontpage. You add people to the conversation by sharing the URL with them. When they open the URL, they will be taken straight into the room and asked to turn on their webcam and microphone. 
+**appear.in** was created to achieve one goal: **to make it really easy to start a video meeting.** To achieve this, we allow users to create a new video room in one click from the frontpage. You add people to the conversation by sharing the URL with them. When they open the URL, they will be taken straight into the room and asked to turn on their webcam and microphone. 
 
 ##Features in the beta version##
 Like most developers, we do a lot of whiteboard drawing. But to our horror, none of the communication channels we have used to date, have an easy way to draw together right then and there. So to be able to share drawings, while still being able to share screens at the same time (because no one has the time to switch back and forth between tabs), we have often ended up doing this:
@@ -49,7 +51,7 @@ Peer Connections are also supposed to be almost as simple, after adding streams 
 ##What goes into making appear.in work##
 The architecture of appear.in has two different parts to it, a frontend which is the app that resides within your browser, and a backend.
 
-The frontend of appear.in is built using AngularJS, Socket.io, WebRTC, Twitter Bootstrap 3 and HTML5, while the backend is built on Node.js using Express and Socket.io. In the end we get a technology stack looking something like this:
+The frontend of appear.in is built using [AngularJS](http://angularjs.org/), [Socket.io](http://socket.io/), WebRTC, [Twitter Bootstrap 3](http://getbootstrap.com/) and HTML5, while the backend is built on [Node.js](http://nodejs.org/) using [Express](http://expressjs.com/) and Socket.io. In the end we get a technology stack looking something like this:
 
 <img src="/assets/img/posts/appear-in/techstack.png" alt="architecture drawing appear.in">
 
