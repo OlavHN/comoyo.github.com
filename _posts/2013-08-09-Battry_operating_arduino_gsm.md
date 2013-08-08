@@ -35,7 +35,7 @@ We start by making a function to turn on the modem, and set up the connection. T
 	}
 
 
-Then lets look at the disconnect function. The heart of this function is the call to the GSM shutdown() function. We use the notConnected boolean to check that we are connected, then try to shut down the modem. If it managed to shut down, we turn off all LEDs to save power while not connected.
+Then lets look at how to disconnect. The heart of this function is the call to the GSM shutdown() function. We use the notConnected boolean to check that we are connected, then try to shut down the modem. If it managed to shut down, we turn off all LEDs to save power while not connected.
 
 
 	void closeConnection(){
@@ -53,7 +53,7 @@ Then lets look at the disconnect function. The heart of this function is the cal
 	  }
 	}
 
-We now have a way of turning the modem off and on in between measurements. So in the loop function we start by calling startConnection(), then measure temperature, upload the data, and end with calling closeConnection().
+We now have a way of turning the modem off and on in between measurements. So in the loop function we start by calling startConnection(), measure temperature, upload the data, and end with calling closeConnection().
 
 ## Set serial pins to low
 Setting the serial RX pin on the GSM shield low after shutdown saved us a lot of energy. This seems to be a problem that [is well known](http://forum.arduino.cc/index.php?topic=158811.0), and will be added in a future version of the library. In the meantime we need to do this ourselves.
@@ -61,12 +61,12 @@ Setting the serial RX pin on the GSM shield low after shutdown saved us a lot of
 ## Change GSM operating frequency
 The Arduino GSM shield uses the Quectel M10 modem. This is a quad-band modem, meaning it can run on all four most common GSM frequencies. The modems [specifications](http://www.quectel.com/UploadFile/Product/Quectel_M10_GSM_Specification_V3.0.pdf) tells us that the modem uses 1W of power on 850/900 MHz, and 2W on 1800/1900 MHz. Our measurements showed the same results, even if the connection was considerably weaker on 1800 MHz than on 900 MHz. So changing the operating frequency of the modem will likely save us some energy. A simple way to change the modems operating frequency, is using the [Arduino Band Management](http://arduino.cc/en/Tutorial/GSMToolsBandManagement) program. When you change the frequency it is changed internally in the modem so you don't have to specify it every time you upload new code
 
-When you run this program you can either choose single frequencies (top three choices) or a combination of several frequencies. If you choose one of the combinations, the Arduino is going to choose to connect to the frequency with the strongest signal. This won't always be the best in terms of power, so in our case we use the DCS frequency specifically. In Norway (at least) this frequency is not used as much outside of the cities, so we will lose some portability. Make sure the frequency you choose is available in the area you are going to use your Arduino.
+When you run this program you can either choose single frequencies (top three choices) or a combination of several frequencies. If you choose one of the combinations, the Arduino is going to connect to the frequency with the strongest signal. This won't always be the best in terms of power, so in our case we use the DCS frequency specifically. In Norway (at least) this frequency is not used as much outside of the cities, so we will lose some portability. Make sure the frequency you choose is available in the area you are going to use your Arduino.
 
 ## Let the Arduino sleep
 There are several pages on the internet explaining how to make your Arduino sleep, but the by far easiest way to do this is to use Rocket Scream's [LowPower library](https://github.com/rocketscream/Low-Power). From the code below, you can see that we use the LowPower powerDown function. This puts the Arduino to sleep and sets the watchdog timer to wake it up. The ATmega328 supports sleep up to 8 seconds, so we set the timer to that in the parameters of the function. We also turn off the Analog to Digital Converter and the Brownout Detector to save even more energy.
 
-The biggest problem with making the Arduino sleep, is that it stops counting running milliseconds while in sleep. Therefore the previous way of posting values every five minutes won't work anymore. Instead we start counting sleep-cycles. Counting 25 sleep cycles plus the time it takes to get and upload data, we get data spaced somewhere between 4 and 5 minutes apart. You can choose how many sleep cycles you want to wait between each measurement, and the battery is likely to improve with a longer interval (more cycles). If you want to read more about sleep and the watchdog timer, you can take a look at the [ATmega328 documentation](http://www.atmel.com/Images/doc8161.pdf) and [Rocket Scream's description](http://www.rocketscream.com/blog/2011/07/04/lightweight-low-power-arduino-library/) of their library.
+The biggest problem with making the Arduino sleep, is that it stops counting running milliseconds while it sleeps. Therefore the previous way of posting values every five minutes won't work anymore. Instead we start counting sleep-cycles. Counting 25 sleep cycles plus the time it takes to get and upload data, we get data spaced somewhere between 4 and 5 minutes apart. You can choose how many sleep cycles you want to wait between each measurement, and the battery is likely to improve with a longer interval (more cycles). If you want to read more about sleep and the watchdog timer, you can take a look at the [ATmega328 documentation](http://www.atmel.com/Images/doc8161.pdf) and [Rocket Scream's description](http://www.rocketscream.com/blog/2011/07/04/lightweight-low-power-arduino-library/) of their library.
 
 	void loop(void) {
 	  if(wait>=25){
