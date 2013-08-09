@@ -143,7 +143,7 @@ The loop function runs continuously as long as the Arduino is powered, only stop
 
     if((millis()-lastTime)>=60000){
         lastTime = millis();
-        float temperature = temp.getTemp(water);
+        temperature = temp.getTemp(water);
         datastreams[0].setFloat(temperature);
         temperature = temp.getTemp(air);
         datastreams[1].setFloat(temperature);
