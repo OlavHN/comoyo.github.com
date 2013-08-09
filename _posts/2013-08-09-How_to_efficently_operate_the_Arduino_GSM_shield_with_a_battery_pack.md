@@ -1,11 +1,11 @@
 ---
 layout: post
 authors: christian
-title: Battery operating the Arduino GSM shield
+title: How to efficently operate the Arduino GSM shield with a battery pack
 category: M2M
 ---
 
-**This is a follow up post on how to build a water temperature sensor using the Arduino GSM shield and Xively. This post should make sense on its own, but if you want to read the first part you can find it [here](/blog/2013/08/01/m2m_adventures/).**
+**This is a follow-up post on how to build a water temperature sensor using the Arduino GSM shield and Xively. This post should make sense on its own, but if you want to read the first part you can find it [here](/blog/2013/08/01/m2m_adventures/).**
 
 The biggest problem with the sensor we made in the first post is that it cannot operate on battery power for any considerable amount of time. In our testing using 8 AA-batteries the sensor lasted for about 24hrs, which is not acceptable for most sensors. So, how can we make it run for longer periods of time?
 
@@ -14,7 +14,7 @@ The biggest problem with the sensor we made in the first post is that it cannot 
 ## Power down the modem and LEDs
 The first thing to do is to disconnect the GPRS connection and turn off the modem when it is not in use. The modem is the biggest energy consumer, reaching 2W in some configurations. So we need a way to switch it off and on again.
 
-We start by making a function to turn on the modem, and set up the connection. This should seem familiar if you have read the previous post, as the code is more or less identical to its setup function. Whereas in the previous version of the program you might get away with not having a delay between connecting to GSM and setting up the GPRS connection, it becomes quite important here since we are disconnecting and connecting more than once. In our testing we usually had problems connecting to the network during rush-hour when using too small of a delay, so even if your code works right now, it might not tomorrow morning. We still had problems using 1s delay so we bumped it up to 3s and has not had any problems since. You might get away with a lower delay, but it should at least be 1s.
+We start by making a function to turn on the modem, and set up the connection. This should seem familiar if you have read the previous post, as the code is more or less identical to its setup function. Whereas in the previous version of the program you might get away with not having a delay between connecting to GSM and setting up the GPRS connection, it becomes quite important here since we are disconnecting and connecting more than once. In our testing we usually had problems connecting to the network during rush-hour when using too small of a delay, so even if your code works right now, it might not tomorrow morning. We still had problems using 1s delay so we bumped it up to 3s and have not had any problems since. You might get away with a lower delay, but it should at least be 1s.
 
 	void startConnection(){
 	  while (notConnected) {
@@ -96,4 +96,4 @@ The biggest problem with making the Arduino sleep, is that it stops counting run
 ## Other things to consider
 The Arduino was made to be versatile, not to be used for low power projects. Using the voltage regulator and other standard features of the Arduino, we lose a lot more energy than what we would have if we made a specific board for this specific use case. This guide was made to be simple for others to follow so we decided to only do changes to the program, not the hardware. If you want to lower the power consumption further than we have done here, you should take a look at [gammon.com.au/power](http://gammon.com.au/power) which has a lot of good tips.
 
-Complete, commented code is available at [https://github.com/christiandt/BeachSensor](https://github.com/christiandt/BeachSensor)
+Complete, commented code is available at [https://github.com/comoyo/BeachSensor](https://github.com/comoyo/BeachSensor)
