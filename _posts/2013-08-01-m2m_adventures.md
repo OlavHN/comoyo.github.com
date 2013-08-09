@@ -143,7 +143,7 @@ The loop function runs continuously as long as the Arduino is powered, only stop
 
     if((millis()-lastTime)>=60000){
         lastTime = millis();
-        float temperature = temp.getTemp(water);
+        temperature = temp.getTemp(water);
         datastreams[0].setFloat(temperature);
         temperature = temp.getTemp(air);
         datastreams[1].setFloat(temperature);
@@ -162,7 +162,7 @@ We now have everything we need, and are ready to post the values to Xively. This
         digitalWrite(redLed, LOW);
     }
 
-If everything works according to plan, we should now have a working sensor that is uploading two temperature values to Xively, and displaying connection information using two LEDs. You can download the full version of the code over at GitHub: [https://github.com/christiandt/BeachSensor](https://github.com/christiandt/BeachSensor)
+If everything works according to plan, we should now have a working sensor that is uploading two temperature values to Xively, and displaying connection information using two LEDs. You can download the full version of the code over at GitHub: [https://github.com/comoyo/BeachSensor](https://github.com/comoyo/BeachSensor)
 
 While this code runs well using wall power, it will probably not run longer than 24 hours if you are going to run the sensor on normal batteries. In a later post we will go through some of the things we have done to improve battery life.
 
