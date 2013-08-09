@@ -1,7 +1,7 @@
 ---
 layout: post
 authors: christian
-title: How to efficently operate the Arduino GSM shield with a battery pack
+title: How to efficiently operate the Arduino GSM shield with a battery pack
 category: M2M
 ---
 
